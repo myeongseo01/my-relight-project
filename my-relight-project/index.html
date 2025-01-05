@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relight Viewer</title>
+    <!-- OpenLIME 라이브러리 연결 -->
+    <script src="openlime.min.js"></script>
+    <link rel="stylesheet" href="skin.css">  <!-- 스타일시트 연결 -->
+</head>
+<body>
+    <!-- Relight Viewer가 표시될 공간 -->
+    <div id="viewer" style="width: 100%; height: 100vh;"></div>
+
+    <script>
+        // OpenLIME 초기화
+        const viewer = new OpenLIME.Viewer('viewer');
+        // info.json 경로를 연결하여 Relight 데이터를 로드
+        viewer.load('info.json');
+    </script>
+</body>
+</html>
